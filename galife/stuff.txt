@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+
+/***Base layout begin**************************************************************/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	
+	background-color: #F8F8F8;
+	
+}
+
+.push {
+	display: none;
+}
+/***Base layout End**************************************************************/
+
+ 
+.thesky {
+	display: block;
+	max-width: 100%;
+	min-height:80px;
+	
+	
+}
+
+/*** Articles section begin*********************************************************/
+
+
+
+
+
+
+.images {
+	display: block;
+	max-width: 100%;
+	margin: auto;
+}
+
+.yo {
+	margin: 1em .3em;
+	background:#FFFFFF;
+	border-radius: 5px;
+	
+	padding: .2em;
+	box-shadow: 1px 1px 5px;
+}
+
+
+.yo a {
+	text-decoration: none;
+	font-family: 'Barlow', sans-serif;
+	color: #010000;
+	
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+/***Article Section End *********************************************************/
+
+
+/***Media Queries Begin *********************************************************/
+
+
+@media(min-width:768px){
+	body {
+		max-width: 91%;
+		margin: auto;
+	}
+	
+		.container {
+		display: flex;
+		flex-wrap: wrap;
+		
+	}
+	
+	.yo {
+		flex: 3;
+		width: 50%;
+		
+	}
+}
+
+@media(min-width:1000px){
+	body {
+		max-width: 81%;
+	}
+}
+	
+
+@media(min-width: 1200px) {
+	body {
+		max-width: 71%;
+	}
+}
+
+
+
+
+
+/***Media Queries END *********************************************************/

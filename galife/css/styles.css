@@ -1,0 +1,486 @@
+@charset "utf-8";
+/* CSS Document */
+* body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	height: 100%; 
+	margin-bottom: 1px;
+	background:#FBFBFB;
+
+	
+	
+}
+
+
+Begin NAV BAR
+.navlogo {
+	text-align: center;
+	
+	
+}
+
+.logo{
+	max-width: 100%;
+	margin: auto;
+	
+}
+.navitem  {
+	background: #365FE1;
+	display: block;
+	margin: 2px 0;
+	text-align: center;
+	padding: 7px;
+
+	
+}
+
+.navitem a {
+	text-decoration: none;
+	color: #fff;
+	margin: auto;
+	font-family: 'Dosis', sans-serif;
+	padding-top: 5px;
+	font-weight: bold;
+}
+
+@media (min-width:768px) {
+
+
+	.nav {
+		display: flex;
+		margin: auto;
+		
+	}
+	
+	.navitem {
+		background: #FBFBFB;
+		margin-top: 2em;
+		margin-right: 3em;
+		
+		
+	}
+	
+	.push,
+	
+	{
+		margin-right: 7.5%;
+	}
+	
+	.navitem a {
+		color: #365fe1;
+		margin-top: 5em;
+		font-weight: bold;
+	}
+	
+	.navlogo {
+		margin-right: auto;
+		margin-left: 7%;
+	}
+}
+
+@media (min-width:1024px) {
+	
+}
+
+
+
+/*End NAV BAR******************************************/
+
+/*Begin footer******************************************/
+footer {
+	text-align: center;
+	height:6em;
+	border-top: solid .5em #365fe1;
+	width:95%;
+	margin: auto;
+	
+	
+	
+
+	
+	
+}
+
+
+
+
+
+/*End footer******************************************/
+
+
+/*Begin main layout************************************/
+.secondary-content {
+	display: none;
+}
+
+
+.banner {
+	background: #ffffff;
+	background-image:url(../img/mf.jpg);
+	background-repeat: no-repeat;
+	min-height: 187px;
+	
+}
+
+
+
+.beginQuote {
+	background:#E9E9E9;
+	border-top: solid .5em #365fe1;
+	text-align: left;
+	padding: .5em;
+	padding-bottom: 1em;
+	font-style:normal; 
+	
+	
+}
+
+
+.beginQuote h4 {
+	margin: .5em 0;
+	
+}
+
+fieldset {
+	border: none;
+}
+
+.beginQuote input {
+	
+	width: 2em;
+	margin: .5em;
+}
+
+button  {
+	background-color:#365fe1;
+	box-shadow: 1px 1px 5px;
+	padding: 4px;
+	border: none;
+}
+
+button a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px;
+	
+}
+
+
+.main-content {
+	font-family: 'Barlow', sans-serif;
+	max-width: 95%;
+	margin: auto;
+}
+
+.main-content p {
+	
+
+	font-style: normal;
+	
+	
+}
+
+
+
+#simplified {
+	margin-bottom: 5em;
+}
+
+#simplified a {
+	color: #365fe1;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+#disclaimer {
+	color:#B8B8B8;
+	font-size: 12px;
+}
+
+@media(min-width:500px) {
+	.body,
+	footer,
+	.article-container,
+	.quote-container{
+		max-width: 85%;
+		margin: auto;
+	}
+	
+	
+	.navlogo {
+		margin-left: 7.5%;
+	}
+}
+
+
+@media(min-width:768px){
+	.body,
+	.article-container,
+	.quote-container{
+		display: flex;
+		margin-top: 1em;
+	}
+	
+	.secondary-content {
+		display: block;
+	}
+	
+	.col1,
+	.col2{
+		flex-grow: 1;
+		
+	}
+	
+	.col1,
+	.article-left-column,
+	.quote-left-column{
+		width:80%;
+	}
+	
+	.col2,
+	.article-right-column,
+	.quote-right-column{
+		width: 30%;
+		margin-left: 2em;
+	}
+	
+	.quotation {
+		background:#365fe1;
+		margin-left: 1em;
+		margin-bottom: 1em;
+		margin-top: 0;
+		border-radius: 12px;
+		padding: 1em;
+		color: white;
+		font-family: 'Short Stack', cursive;
+	}
+	
+	.nav {
+		border-bottom: none;
+		
+	}
+	
+}
+
+@media(min-width:1200px) {
+	.body,
+	footer,
+	.article-container,
+	.quote-container{
+		max-width: 70%;
+	}
+	
+	.navlogo {
+		margin-left: 14%;
+	}
+	
+	.push {
+		margin-right: 15%;
+	}
+}
+
+
+
+
+/*************************************************************************************************************************
+****************************************Articles layout Begin*************************************************************
+**************************************************************************************************************************/
+
+.article-image img {
+	max-width: 100%;
+}
+
+.article-right-column {
+	display: none;
+}
+
+@media(min-width:768px){
+	
+	.article-right-column {
+		display: block;
+		background: #ffffff;
+		
+	}
+	
+	.article-right-column a {
+		text-decoration: none;
+		color: #365FE1;
+		display: block;
+		text-align: center;
+		border-bottom: solid 1px #365FE1;
+		padding: 10px;
+		margin: 6px;
+		
+		
+	}
+}
+
+
+
+
+/*************************************************************************************************************************
+****************************************Articles layout END*************************************************************
+**************************************************************************************************************************/
+
+
+/*************************************************************************************************************************
+****************************************Quote layout Begin*************************************************************
+**************************************************************************************************************************/
+
+/*****form**********************/
+.quote-container form {
+		
+		max-width: 95%;
+		margin: auto;
+		margin-top: 2em;
+		background-image:url(../img/crossed.jpg);
+		background-size: cover;
+		padding-bottom: .5em;
+		box-shadow: 1px 0px 5px;
+		border-radius: 5px;
+		
+	
+	
+	
+}
+.quote-container fieldset {
+	border: none;
+	border-bottom: solid .1em #364FE1;
+	margin: 1em 0;
+	font-family: 'Barlow', sans-serif;
+	padding: 0;
+
+	
+}
+
+.quote-container #tobaccono {
+	margin-bottom: 1em;
+}
+
+.quote-container h2 {
+	font-family: 'Barlow', sans-serif;
+	max-width: 95%;
+	margin: auto;
+	margin-top: 1em;
+	
+}
+
+.quote-container #field3 {
+	border-bottom: none;
+	margin-bottom: .3em;
+	
+}
+
+.quote-container legend {
+	
+	font-weight: bold;
+
+}
+
+.quote-container .input {
+	width: 83%;
+	padding: 5px 0;
+	background:#FFFFFF;
+	border-radius: 5px;
+	margin-top: .5em;
+	margin-bottom: .5em;
+	outline: none;
+	
+		
+}
+
+
+
+.quote-container .input,
+.quote-container label,
+.quote-container legend {
+	margin-left: 7.5%;
+}
+
+.quote-container .label1 {
+	margin-left: 2px;
+}
+.quote-container .input:focus {
+	background: #FFFFFF;
+	transition-duration: .6s;
+	outline-color: #365FE1;
+	box-shadow: 0 0 1px 3px #365fe1;
+	
+
+	
+}
+
+
+
+.feet,
+.inches,
+.weight{
+	width: 2em;
+
+}
+
+.weight,
+.feet,
+.inches{
+	margin-left: 2px;
+}
+#zip {
+	margin-bottom: 1em;
+}
+
+.quote-container button {
+	background: #365FE1;
+	color: white;
+	outline: none;
+	padding: 10px;
+	width: 50%;
+	border: none;
+	
+	position: relative;
+	text-align: center;
+	margin: 0;
+	margin-left: 25%;
+	border-radius: 7px;
+	
+	
+	
+	
+}
+
+
+/*****form end**********************/
+
+
+footer{
+	margin-top: 5em;
+}
+
+
+
+/*************************************************************************************************************************
+****************************************Quote layout End*************************************************************
+**************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
